@@ -1,11 +1,2 @@
-# Obsidian Notes
-
-Publish your public notes with MkDocs
-
-## Hello World!
-
-The `index.md` in the `/docs` folder is the homepage you see here.
-
-The folders in `/docs` appear as the main sections on the navigation bar.
-
-The notes appear as pages within these sections. For example, [[Note 1]] in `Topic 1`
+## 10팀의 개발에 관련된 문서입니다
+- 왼쪽의 목차를 사용하거나 오른쪽 위의 검색을 사용해 주세요
