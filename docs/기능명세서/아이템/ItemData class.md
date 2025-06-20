@@ -13,8 +13,7 @@
 ### 1. 클래스명: ItemData
 - **역할**: 여러 ItemData 클래스들의 부모 역할 
 - **주요 메서드**:
-  - IsNameEmpty, IsImageNone, IsPrefabNone: ScriptableObject를 만들때 실수를 방지하는 기능
-    설명: 클래스의 생성
+  - IsNameEmpty, IsImageNone, IsPrefabNone: ScriptableObject를 만들때 실수를 방지하는 기능   
 - **상속/인터페이스**:
   - 상속: ScriptableObject
 
