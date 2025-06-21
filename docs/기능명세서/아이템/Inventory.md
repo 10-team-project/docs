@@ -51,7 +51,7 @@ classDiagram
 		+Item(ItemData data) Item
 	}
 
-	class IObservableObject {
+	class IObservableObject~T~ {
 		<<interface>>
 		+Action~T~ WillChange
 		+Action~T~ OnChanged
