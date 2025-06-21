@@ -48,5 +48,5 @@ classDiagram
 		#IsPrefabNone() bool
 	}
 
-	Item o-- ItemData	
+	Item "*" o-- "1" ItemData	: has
 ```

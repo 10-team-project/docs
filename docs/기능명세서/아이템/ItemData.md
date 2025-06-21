@@ -11,7 +11,7 @@
 ## 🧩 클래스 구조 및 역할
 
 ### 1. 클래스명: ItemData
-- **역할**: 여러 ItemData 클래스들의 부모 역할 
+[]()- **역할**: 여러 ItemData 클래스들의 부모 역할 
 - **주요 메서드**:
   - IsNameEmpty, IsImageNone, IsPrefabNone: ScriptableObject를 만들때 실수를 방지하는 기능   
 - **상속/인터페이스**:
@@ -37,5 +37,5 @@ classDiagram
 		#IsImageNone() bool
 		#IsPrefabNone() bool
 	}
-	ScriptableObject<|-- ItemData
+	ScriptableObject<|-- ItemData: inherit
 ```
