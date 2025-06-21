@@ -16,8 +16,8 @@
 ### 인터페이스 명: `IObservableObject<T>`
 - **역할**: 외부에서 intance의 상태 변경에 대해 반응할 수 있도록 callback function을 추가할 수 있게 하고, 변경이 있을 때 실행하는 역할
 - **주요 메서드**:
-  - `Action<T> WillChange`: 내부의 상태가 변경되기 전에 실행 됨
-  - `Action<T> OnChanged`: 내부의 상태가 변경된 후에 실행 됨
+  - `WillChange`: 내부의 상태가 변경되기 전에 실행 됨
+  - `OnChanged`: 내부의 상태가 변경된 후에 실행 됨
 - **제약**: T는 class만 가능함 (struct는[ObservableValue](https://10-team-project.github.io/docs/%EA%B8%B0%EB%8A%A5%EB%AA%85%EC%84%B8%EC%84%9C/%EB%94%94%EC%9E%90%EC%9D%B8%20%ED%8C%A8%ED%84%B4/ObservableValue/)로 구현)
 ### 구현 예시 [Inventory](https://10-team-project.github.io/docs/%EA%B8%B0%EB%8A%A5%EB%AA%85%EC%84%B8%EC%84%9C/%EC%95%84%EC%9D%B4%ED%85%9C/Inventory/)    
 - 구현 방식   

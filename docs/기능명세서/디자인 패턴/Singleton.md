@@ -23,14 +23,14 @@
 ### 2. 클래스명: `SingletoneBehaviour<T>`
 - **역할**: 게임 플레이 중 GameObject에 component로서 존재하며 scene이 변경되는 것에 영향을 받지 않음
 - **주요 메서드**:
-  - `protected static CreateInstace()`  
+  - `CreateInstace`  
 			다른 SingletoneBehaviour class에 의해 생성하거나 게임이 로드 되기 전의 시점에 생성해야 할 때 사용   
-  - `protected virtual Awake()`  
+  - `Awake`  
 			같은 class의 instance가 존재하는지 확인하고 없다면 생성된 instance를 singleton으로 설정   
 			만약 이미 존재한다면 해당 instance의 GameObject를 제거    
-  - `public static Destroy()`  
+  - `Destroy`  
 	    존재하는 instance를 제거하고 내부 instance를 null로 변경   
-  - `protected OnDestroy()`  
+  - `OnDestroy`  
 	    해당 GameObject가 제거될 때 singleton의 instance를 null로 변경   
 
 - **상속/인터페이스**:
