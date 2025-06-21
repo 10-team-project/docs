@@ -19,9 +19,9 @@
 		GetItemAsGameObject: 원하는 아이템의 Prefab을 사용해 GameObject를 생성해서 반환함 (Prefab이 없는 경우 Exception)    
 - **상속/인터페이스**:
   - 상속   
-    SingletonBehaviour\<Inventory\>: scene의 변화에 영항을 받지 않기 위해 우선 singleton으로 구현   
+    SingletonBehaviour<Inventory\>: scene의 변화에 영항을 받지 않기 위해 우선 singleton으로 구현   
   - 구현 인터페이스   
-    IObservableObject\<Inventory\>: 인벤토리 안의 변화를 감지할 수 있도록 하는 기능   
+    IObservableObject<Inventory\>: 인벤토리 안의 변화를 감지할 수 있도록 하는 기능   
 
 ### 2. 관련 클래스/컴포넌트
 - [ItemData](https://10-team-project.github.io/docs/%EA%B8%B0%EB%8A%A5%EB%AA%85%EC%84%B8%EC%84%9C/%EC%95%84%EC%9D%B4%ED%85%9C/ItemData/): Inventory에 아이템을 추가하거나, 보관중인 아이템을 가져오기 위해 사용됨   
