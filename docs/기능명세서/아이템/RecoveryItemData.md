@@ -22,7 +22,7 @@
 ### 2. 관련 클래스/컴포넌트
 - [Inventory](https://10-team-project.github.io/docs/%EA%B8%B0%EB%8A%A5%EB%AA%85%EC%84%B8%EC%84%9C/%EC%95%84%EC%9D%B4%ED%85%9C/Invetory/)에서 사용됨   
 - 임시로 만든 Character의 Stat으로 어떤 자원을 회복할지 결정함   
-- Character 또는 Player와 상호작용 할 예정   
+`- Character 또는 Player와 상호작용 할 예정   
 
 ---
 
@@ -54,14 +54,6 @@ classDiagram
 		+Name: string
 		+Image: Sprite
 		+Prefab: GameObject
-		
-		-itemName: string
-		-image: Sprite
-		-prefab: GameObject	
-
-		#IsNameEmpty() bool
-		#IsImageNone() bool
-		#IsPrefabNone() bool
 	}
 
 	ItemData <|-- RecoveryItemData	: inherit
