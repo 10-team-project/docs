@@ -1,3 +1,4 @@
+**깃허브 탬플릿 예시**
 # 이슈 탬플릿
 ## 1번
 ```yaml
@@ -299,10 +300,10 @@ body:
 
 ---
 
-**폴더 구성**
- .github/
-├── ISSUE_TEMPLATE/
-│   ├── feature-request.yaml      ← 기능 요청용 템플릿
-│   ├── bug-report.yaml           ← 버그 리포트용 템플릿
-│   └── config.yml                ← 템플릿 선택 화면 설정 파일
-├── pull_request_template.md      ← PR 템플릿
+**폴더 구성**   
+ .github/   
+├── ISSUE_TEMPLATE/   
+│   ├── feature-request.yaml      ← 기능 요청용 템플릿   
+│   ├── bug-report.yaml           ← 버그 리포트용 템플릿   
+│   └── config.yml                ← 템플릿 선택 화면 설정 파일   
+├── pull_request_template.md      ← PR 템플릿   
