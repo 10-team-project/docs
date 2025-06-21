@@ -14,14 +14,14 @@
 - **역할**: MonoBehaviour를 component로 가지는 GameObject를 ObjectPool로 관리하여 사용   
 		  
 - **주요 메서드**:
-  - `MonoBehaviourPool`   
+  1. MonoBehaviourPool`   
 	    poolSize를 정하고 필요한 경우 prefab을 전달한다, 또한 GameObject를 생성 후 변경하기 위한 Action을 전달할 수 있다
-  - `CreatePooledObject`   
+  2. `CreatePooledObject`   
 	    constructor에서 prefab을 제공했을 경우 prefab으로 GameObject를 생성하고 그렇지 않을 경우 새로운 GameObject를 생성한다, Action을 제공했을 경우
 	  생성 후 Action을 실행한 후 Pool에 저장한다   
-	- `OnTakeFromPool`   
+	3. `OnTakeFromPool`   
 	  GameObject를 활성화   
-	- `OnReturnedToPool`   
+	4. `OnReturnedToPool`   
 	  GameObject를 비활성화   
 - **제약**: T는 MonoBehaviour, IPooledObject만 가능함 
 
@@ -35,7 +35,7 @@ classDiagram
 		-prefab: GameObject
 		-initPooledObject: Action~T~
 		+MonoBehaviourPool(int poolSize, Nullable~int~ maxPoolSize, GameObject prefab, Action~T~ initPooledObject)
-		#override CreatePooledObject(): T
+		#override CreatePooledObject() T
 		#override OnTakeFromPool(T)
 		#override OnReturnedToPool(T)
 	}
@@ -60,6 +60,7 @@ classDiagram
 	}
 
 	ObjectPool~T~ <|-- MonoBehaviourPool~T~ : inherit
+	MonoBehaviour <|-- T: inherit
 	T "*" o.. "1" MonoBehaviourPool~T~: has
 	T "*" o.. "1" ObjectPool~T~: has
 	IPooledObject <|.. T: implement
