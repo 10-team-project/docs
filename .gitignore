@@ -1,6 +1,5 @@
 .vscode/settings.json
-.obsidian/*
+**/.obsidian
 **/.obsidian/*
 **/tags
-*/.obsidian/*
 
