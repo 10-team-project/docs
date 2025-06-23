@@ -3,7 +3,7 @@
 ## 📌 기능 개요
 - **기능 설명**: 아이템을 조합하기 위한 데이터 
 - **담당자**: [신희관]
-- **개발 일자**: [2025-06-20]
+- **개발 일자**: [2025-06-23]
 - **관련 이슈/티켓**: N/A
 
 ---
@@ -49,7 +49,7 @@ classDiagram
 		#IsPrefabNone() bool
 	}
 	
-	ItemRecipeData "1" <-- "*" ItemData: has
+	ItemRecipeData "1" o-- "*" ItemData: has
 	ScriptableObject<|-- ItemData: inherit
 	ScriptableObject<|-- ItemRecipeData: inherit
 ```
