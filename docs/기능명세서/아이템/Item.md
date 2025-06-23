@@ -45,7 +45,7 @@ classDiagram
 
 		#IsNameEmpty() bool
 		#IsImageNone() bool
-		#IsPrefabNone() bool
+[]()		#IsPrefabNone() bool
 	}
 
 	Item "*" o-- "1" ItemData	: has
