@@ -25,7 +25,7 @@
 
 ### 2. 관련 클래스/컴포넌트
 - [ItemData](https://10-team-project.github.io/docs/%EA%B8%B0%EB%8A%A5%EB%AA%85%EC%84%B8%EC%84%9C/%EC%95%84%EC%9D%B4%ED%85%9C/ItemData/): Inventory에 아이템을 추가하거나, 보관중인 아이템을 가져오기 위해 사용됨   
-- [Item](https://10-team-project.github.io/docs/%EA%B8%B0%EB%8A%A5%EB%AA%85%EC%84%B8%EC%84%9C/%EC%95%84%EC%9D%B4%ED%85%9C/Item/): Iventory에서 보관중인 아이템의 반환 형태   
+- [Item](https://10-team-project.github.io/docs/%EA%B8%B0%EB%8A%A5%EB%AA%85%EC%84%B8%EC%84%9C/%EC%95%84%EC%9D%B4%ED%85%9C/Item/): Inventory에서 보관중인 아이템의 반환 형태   
 
 ---
 
@@ -59,7 +59,7 @@ classDiagram
 	
 	SingletonBehaviour~Inventory~ <|-- Inventory : inherit
 	IObservableObject~Inventory~  <|.. Inventory : implement
-	Inventory "1" o-- "*" Item : has
+	Item "*" o-- "1" Inventory : has
 	ItemData "*" <-- "1" Inventory : use
-	Item "*" o-- "1" ItemData	: has
+	ItemData "1" o-- "*" Item	: has
 ```
